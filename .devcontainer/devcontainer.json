@@ -5,6 +5,9 @@
 	"features": {
 		"ghcr.io/devcontainers-community/features/deno": "latest"
 	},
+	"mounts": [
+		"type=bind,source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,readonly"
+	],
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Debian OS version: bullseye, buster
