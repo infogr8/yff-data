@@ -2,20 +2,25 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/deno
 {
 	"name": "Deno",
- 	"build": {
+	"features": {
+		"ghcr.io/devcontainers-community/features/deno": "latest"
+	},
+	"mounts": [
+		"type=bind,source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,readonly"
+	],
+	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Debian OS version: bullseye, buster
 		"args": {
 			"VARIANT": "bullseye"
 		}
 	},
-
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
-			"settings": { 
+			"settings": {
 				// Enables the project as a Deno project
 				"deno.enable": true,
 				// Enables Deno linting for the project
@@ -23,13 +28,13 @@
 				// Sets Deno as the default formatter for the project
 				"editor.defaultFormatter": "denoland.vscode-deno"
 			},
-			
 			// Add the IDs of extensions you want installed when the container is created.
 			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"ms-python.python",
 				"denoland.vscode-deno"
 			]
 		}
 	},
-
 	"remoteUser": "vscode"
 }
