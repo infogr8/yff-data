@@ -3,7 +3,7 @@ title: Vacancies data processing
 url: /dashboard/vacancies/pipeline/
 ---
 
-There are three stages to the [data processing pipeline](https://github.com/open-innovations/yff-data/tree/main/scripts/vacancies), each being written in Python:
+There are three stages to the [data processing pipeline](https://github.com/infogr8/yff-data/tree/main/scripts/vacancies), each being written in Python:
 
 * extract: where we get a copy of the file from an appropriate source
 * transform: where we convert it into a simpler form by selecting rows and filtering columns, and transforming formats to meet what we need
@@ -24,7 +24,7 @@ For the VACS01 figures, the transform script extracts the following variable fro
 
 * `AP2Y`: all vacancies (thousands), SA
 
-We then we save a [CSV of estimated vacancies by quarter](https://github.com/open-innovations/yff-data/blob/main/src/_data/sources/vacancies/quarterly_vacancies.csv) and [another CSV by rolling 3-month period](https://github.com/open-innovations/yff-data/blob/main/src/_data/sources/vacancies/monthly_vacancies.csv) for visualisation on [the vacancies dashboard](https://data.youthfuturesfoundation.org/dashboard/vacancies/).
+We then we save a [CSV of estimated vacancies by quarter](https://github.com/infogr8/yff-data/blob/main/src/_data/sources/vacancies/quarterly_vacancies.csv) and [another CSV by rolling 3-month period](https://github.com/infogr8/yff-data/blob/main/src/_data/sources/vacancies/monthly_vacancies.csv) for visualisation on [the vacancies dashboard](https://data.youthfuturesfoundation.org/dashboard/vacancies/).
 
 ## VACS02 processing
 
@@ -50,7 +50,7 @@ From the EDD extract, we query the following measures for each sector:
 *   `JP9Y`: other service activities, SA  
 *   `JP9Z`: total services, SA  
 
-Quarterly values are extracted for these measures and saved as a [CSV file of all vacancies by sector](https://github.com/open-innovations/yff-data/blob/main/data/vacancies/vacancies_by_sector.csv).  
+Quarterly values are extracted for these measures and saved as a [CSV file of all vacancies by sector](https://github.com/infogr8/yff-data/blob/main/data/vacancies/vacancies_by_sector.csv).  
 
 In the Prepare script, these sectors are broken down further and saved as separate CSV files that are used to power the visualisations on [the vacancies dashboard](https://data.youthfuturesfoundation.org/dashboard/vacancies/). 
 

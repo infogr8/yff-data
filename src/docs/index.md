@@ -19,9 +19,9 @@ There are three stages to the overall build:
 ## Data pipelines
 
 The first part of the data processing takes place in the
-[`yff-data-pipelines` GitHub repo](https://github.com/open-innovations/yff-data-pipelines).
+[`yff-data-pipelines` GitHub repo](https://github.com/infogr8/yff-data-pipelines).
 Data is ultimately written to appropriate directories in the
-[`yff-data` GitHub repo](https://github.com/open-innovations/yff-data).
+[`yff-data` GitHub repo](https://github.com/infogr8/yff-data).
 
 In either case, scripts are written in Python / Jupyter, and stored in the `/pipelines`
 or `/scripts` folders.
@@ -50,7 +50,7 @@ analysis conducted by YFF or their partners / suppliers.
 ### Prepare
 
 Data is then prepared for visualisation within the
-[GitHub source code repository for this site](https://github.com/open-innovations/yff-data).
+[GitHub source code repository for this site](https://github.com/infogr8/yff-data).
 This is largely a case of extracting data from the large transformed datasets, potentially
 filtering and summarising that data, and reshaping to a form that can be used to build
 the visualisations.
@@ -82,7 +82,7 @@ The site is built using the [Lume static site generator](https://lume.land) soft
 
 The resulting static HTML, CSS, JavaScript and assets are then deployed to a GitHub Pages site.
 
-All prepared data, pipeline and site source code are tracked in the [`yff-data` GitHub repository](https://github.com/open-innovations/yff-data). Pipelines and site build execution uses GitHub Actions.
+All prepared data, pipeline and site source code are tracked in the [`yff-data` GitHub repository](https://github.com/infogr8/yff-data). Pipelines and site build execution uses GitHub Actions.
 
 The content of the pages is derived directly from the templates. Any changes to this
 content would need to be committed to the GitHub repository. This is typically coded in

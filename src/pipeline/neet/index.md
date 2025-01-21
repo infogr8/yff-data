@@ -3,7 +3,7 @@ title: NEET data processing
 url: /dashboard/neet/pipeline/
 ---
 
-There are three stages to the [data processing pipeline](https://github.com/open-innovations/yff-data/tree/main/scripts/neet), each being written in Python:
+There are three stages to the [data processing pipeline](https://github.com/infogr8/yff-data/tree/main/scripts/neet), each being written in Python:
 
 * extract: where we get a copy of the file from an appropriate source
 * transform: where we convert it into a simpler form by selecting rows and filtering columns, and transforming formats to meet what we need
@@ -35,5 +35,5 @@ In each case we
 * rename the columns
 * calculate rates for the unemployed and economically inactive groups
 
-We then combine the three data sets into a single file and save as a [NEET CSV file](https://github.com/open-innovations/yff-data/blob/main/data/neet/neet.csv).
-Along with this we create a [metadata file](https://github.com/open-innovations/yff-data/blob/main/data/neet/metadata.json).
+We then combine the three data sets into a single file and save as a [NEET CSV file](https://github.com/infogr8/yff-data/blob/main/data/neet/neet.csv).
+Along with this we create a [metadata file](https://github.com/infogr8/yff-data/blob/main/data/neet/metadata.json).

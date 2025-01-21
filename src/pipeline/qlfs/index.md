@@ -3,7 +3,7 @@ title: QLFS data processing
 url: /dashboard/labour-market/pipeline/
 ---
 
-There are three stages to the [data processing pipeline](https://github.com/open-innovations/yff-data/tree/main/scripts/labour-market), each being written in Python:
+There are three stages to the [data processing pipeline](https://github.com/infogr8/yff-data/tree/main/scripts/labour-market), each being written in Python:
 
 * extract: where we get a copy of the file from an appropriate source
 * transform: where we convert it into a simpler form by selecting rows and filtering columns, and transforming formats to meet what we need
@@ -11,9 +11,9 @@ There are three stages to the [data processing pipeline](https://github.com/open
 
 ## Data sources
 
-The sources for this data is the Labour Market Survey. These are pulled from NOMIS, via the [LMS extract in the YFF Data Pipelines repository](https://github.com/open-innovations/yff-data-pipelines/blob/main/data/processed/labour-market/lms.csv).
+The sources for this data is the Labour Market Survey. These are pulled from NOMIS, via the [LMS extract in the YFF Data Pipelines repository](https://github.com/infogr8/yff-data-pipelines/blob/main/data/processed/labour-market/lms.csv).
 
-We extract the data of interest to a [monthly rolling file](https://github.com/open-innovations/yff-data/blob/main/data/labour-market/monthly-rolling.csv).
+We extract the data of interest to a [monthly rolling file](https://github.com/infogr8/yff-data/blob/main/data/labour-market/monthly-rolling.csv).
 
 ## Employment status processing
 
@@ -37,7 +37,7 @@ For the A06 figures, the transform script extracts the following measures from t
 We then select every third period starting at the most recent line to avoid overlapping quarters.
 We also convert the quarter from a string to the date representing the start of the quarter (e.g. Jan-Mar 2023 is converted to a proper datetime object at 1-Jan-2023)
 
-Finally, we save a [CSV of unemployment by education status](https://github.com/open-innovations/yff-data/blob/main/data/labour-market/monthly-rolling.csv) for further processing.
+Finally, we save a [CSV of unemployment by education status](https://github.com/infogr8/yff-data/blob/main/data/labour-market/monthly-rolling.csv) for further processing.
 
 ## Long-term unemployment status processing
 
@@ -56,4 +56,4 @@ We extract the levels of unemployment and unemployment over 12 months as well as
 
 We convert the quarters as described above, and then combine the unemployment total and over 12 months levels across the two age ranges to come up with an aggregated figure from 16-24. We then calculate the resulting rate by simple division.
 
-Finally, we save the last three years to a [CSV of long-term unemployment data](https://github.com/open-innovations/yff-data/blob/main/data/labour-market/not_in_education.csv) as before.
+Finally, we save the last three years to a [CSV of long-term unemployment data](https://github.com/infogr8/yff-data/blob/main/data/labour-market/not_in_education.csv) as before.

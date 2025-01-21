@@ -29,7 +29,7 @@ There are two ways to manage annotations, via the headless content management sy
 ### Via the Content Management System
 
 The site implements a headless Content Management System based on [Decap CMS](https://decapcms.org/) (formerly Netlify CMS).
-To use this, you will need a GitHub account, and for that account to have edit access to the [yff-data GitHub repository](https://github.com/open-innovations/yff-data).
+To use this, you will need a GitHub account, and for that account to have edit access to the [yff-data GitHub repository](https://github.com/infogr8/yff-data).
 
 1.  Visit [the admin page](https://data.youthfuturesfoundation.org/admin/) for the Data Dashboard.
 2.  If you are not logged in, you will need to click the **Login with GitHub**.

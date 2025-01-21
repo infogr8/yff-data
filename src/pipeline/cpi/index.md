@@ -3,7 +3,7 @@ title: CPI data processing
 url: /dashboard/cpi/pipeline/
 ---
 
-There are four stages to the [data processing pipeline](https://github.com/open-innovations/yff-data/tree/main/scripts/cpi), each being written in Python:
+There are four stages to the [data processing pipeline](https://github.com/infogr8/yff-data/tree/main/scripts/cpi), each being written in Python:
 
 * extract: where we get a copy of the file from an appropriate source
 * transform: where we convert it into a simpler form by selecting rows and filtering columns, and transforming formats to meet what we need
@@ -46,4 +46,4 @@ We explicitly indicate the sign to show if the percentage change is an positive 
 
 For the line chart, we take monthly data for the past 10 years from the most recent release date. 
 
-Finally, we save [CSV files](https://github.com/open-innovations/yff-data/blob/main/data/cpi/) to drive our visualisations.
+Finally, we save [CSV files](https://github.com/infogr8/yff-data/blob/main/data/cpi/) to drive our visualisations.

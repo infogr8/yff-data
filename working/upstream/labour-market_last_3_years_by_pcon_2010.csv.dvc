@@ -3,7 +3,7 @@ frozen: true
 deps:
 - path: data/processed/labour-market/last_3_years_by_pcon_2010.csv
   repo:
-    url: https://github.com/open-innovations/yff-data-pipelines
+    url: https://github.com/infogr8/yff-data-pipelines
     rev_lock: 9c19965e9959f223fdbd54b887a0878098214eec
 outs:
 - md5: 075509e09b9c108ec184bad5510de797
