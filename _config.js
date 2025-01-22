@@ -183,6 +183,17 @@ site.process(['.html'], (pages) => pages.forEach(injector));
 // Processor which adds dependencies into the page head
 site.process(['.html'], (pages) => pages.forEach(autoDependency));
 
+// NEW CODE - More specific string matching
+site.process(['.html'], (pages) => {
+  pages.forEach(page => {
+    page.content = page.content.replaceAll('"/assets/js/', '"/yff-data/assets/js/');
+  });
+});
+
+
+// NEW CODE - Use string manipulation
+
+
 // Add filters
 site.filter('yaml', (value, options = {}) => yamlStringify(value, options));
 site.filter('striplinks', (value) => value.replace(/<a\b[^>]*>([^\<]*)<\/a>/gi, function (m, p1) { return p1; }));
@@ -194,7 +205,15 @@ site.filter('isArray', (item) => Array.isArray(item));
 site.filter('getAttr', (object, attr) => object.map(x => x[attr]));
 
 site.filter('max', (list) => Math.max(...list));
+site.script("/assets/js/selector.js", "/src/_lib/ui/selector.ts");
+site.addEventListener("beforeBuild", () => {
+  console.log("Processing files...");
+});
 
+site.addEventListener("afterBuild", () => {
+  console.log("Build completed");
+});
+ 
 site.filter('autoLegend', (config, options) => {
   const defaultOptions = {
     formatter: (x) => x,
