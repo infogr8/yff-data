@@ -95,6 +95,12 @@ site.copy(['.css']);
 site.copy(['.svg']);
 site.copy(['.png']);
 
+// Add specific copy operations for assets
+site.copy('src/assets/style', '/assets/style');
+site.copy('src/assets/js', '/assets/js');
+site.copy('src/assets/oi', '/assets/oi');
+site.copy('src/_includes/css', '/assets/style/css');  // Copy CSS files from _includes to the correct location
+
 // Process Javascript files
 site.use(
   esbuild({
