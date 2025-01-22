@@ -96,6 +96,8 @@ site.remoteFile('/assets/oi/css/legend.css', 'https://deno.land/x/oi_lume_viz@v0
 site.remoteFile('/assets/oi/css/maps.css', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/css/maps.css');
 site.remoteFile('/assets/oi/js/tooltip.js', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/js/tooltip.js');
 site.remoteFile('/assets/oi/js/map.js', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/js/map.js');
+site.remoteFile('/assets/oi/css/charts.css', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/css/charts.css');
+site.remoteFile('/assets/oi/js/chart.js', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/js/chart.js');
 
 site.copy(['.min.js']);
 site.copy(['.js']);
@@ -104,11 +106,22 @@ site.copy(['.svg']);
 site.copy(['.png']);
 
 // Add specific copy operations for assets
-site.copy('src/assets/style', '/assets/style');
+
 site.copy('src/assets/js', '/assets/js');
 site.copy('src/assets/oi', '/assets/oi');
-site.copy('src/_includes/css', '/assets/style/css');  // Copy CSS files from _includes to the correct location
-site.copy('src/_includes/css/reset', '/assets/style/css/reset');  // Copy reset CSS files
+
+// Ensure all CSS files are copied correctly
+site.copy(['.css'], {
+  src: 'src/_includes/css',
+  dest: '/assets/style/css'
+});
+
+// Copy reset CSS specifically
+site.copy(['.css'], {
+  src: 'src/_includes/css/reset',
+  dest: '/assets/style/css/reset'
+});
+
 
 // Process Javascript files
 site.use(
