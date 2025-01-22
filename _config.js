@@ -72,7 +72,7 @@ site.use(redirects());
 
 site.use(
   oiLumeViz({
-    assetPath: '/assets/oi',
+    assetPath: site.options.location.pathname + 'assets/oi',
     font: {
       family: 'CenturyGothicStd,"Century Gothic",sans-serif',
       fonts: yff.fonts,
