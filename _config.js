@@ -90,7 +90,8 @@ site.use(
 );
 
 site.copy(['.min.js']);
-// site.copy(['.css']);
+site.copy(['.js']);
+site.copy(['.css']);
 site.copy(['.svg']);
 site.copy(['.png']);
 
