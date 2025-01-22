@@ -29,9 +29,8 @@ jobs:
         with:
           site-build-cmd: deno task build
           deno-version: 1.44.2
-          # Add environment variables for the build
           env: |
-            BASE_URL=/yff-data/
+            LUME_BASE_PATH=/yff-data
 
   # Deploy job
   deploy:

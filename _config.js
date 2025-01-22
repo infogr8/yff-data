@@ -34,6 +34,9 @@ const site = lume({
   location: new URL('https://data.youthfuturesfoundation.org/'),
 });
 
+// Configure base path for GitHub Pages
+site.use(basePath());
+
 // Import Nunjucks plugin
 site.use(nunjucks());
 
@@ -270,7 +273,6 @@ site.filter('autoTicks', generateTickArray)
 
 // URL re-writing plugins. These have to be last to enable any urls installed by the
 // processors to be re-written
-site.use(basePath());
 site.use(resolveUrls());
 site.use(slugifyUrls({
   lowercase: false,
