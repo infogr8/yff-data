@@ -72,7 +72,7 @@ site.use(redirects());
 
 site.use(
   oiLumeViz({
-    assetPath: site.options.location.pathname + 'assets/oi',
+    assetPath: '/assets/oi',
     font: {
       family: 'CenturyGothicStd,"Century Gothic",sans-serif',
       fonts: yff.fonts,
@@ -86,42 +86,13 @@ site.use(
       names: yff.namedColours,
       series: ['#E55912', '#005776', '#F7AB3D', '#4A783C'],
     },
-    copyAssets: true  // Ensure assets are copied
   })
 );
 
-// Add remote files for oi-lume-viz assets
-site.remoteFile('/assets/oi/css/holder.css', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/css/holder.css');
-site.remoteFile('/assets/oi/css/legend.css', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/css/legend.css');
-site.remoteFile('/assets/oi/css/maps.css', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/css/maps.css');
-site.remoteFile('/assets/oi/js/tooltip.js', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/js/tooltip.js');
-site.remoteFile('/assets/oi/js/map.js', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/js/map.js');
-site.remoteFile('/assets/oi/css/charts.css', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/css/charts.css');
-site.remoteFile('/assets/oi/js/chart.js', 'https://deno.land/x/oi_lume_viz@v0.15.3/assets/js/chart.js');
-
 site.copy(['.min.js']);
-site.copy(['.js']);
-site.copy(['.css']);
+// site.copy(['.css']);
 site.copy(['.svg']);
 site.copy(['.png']);
-
-// Add specific copy operations for assets
-
-site.copy('src/assets/js', '/assets/js');
-site.copy('src/assets/oi', '/assets/oi');
-
-// Ensure all CSS files are copied correctly
-site.copy(['.css'], {
-  src: 'src/_includes/css',
-  dest: '/assets/style/css'
-});
-
-// Copy reset CSS specifically
-site.copy(['.css'], {
-  src: 'src/_includes/css/reset',
-  dest: '/assets/style/css/reset'
-});
-
 
 // Process Javascript files
 site.use(
