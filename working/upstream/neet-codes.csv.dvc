@@ -1,10 +1,10 @@
-md5: cb4fd1d96b48ab20a52deed04652735b
+md5: a3e352b64cf5fdea3e5a4be9950720bf
 frozen: true
 deps:
 - path: data/metadata/codes/neet-codes.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: 6549820d9fbc7b4e6aa39238f580045cdd4bceee
+    rev_lock: d41961a620ede70a01d61c8ecc73343bb04cb67b
 outs:
 - md5: afcef6301b39ee88517e7d49a760156c
   size: 4266
