@@ -1,10 +1,10 @@
-md5: cdb185555d49c7bb7d6d0c56635b2dd3
+md5: 9ae24a5b1767b82834b6ac30ea7efba9
 frozen: true
 deps:
 - path: data/processed/labour-market/labour_market_by_pcon.parquet
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: d41961a620ede70a01d61c8ecc73343bb04cb67b
+    rev_lock: 7addb363383729705c8206a60cded7fcd1d3275e
 outs:
 - md5: 0491a20b89879395b1dd73c4062ed138
   size: 348031
