@@ -1,10 +1,10 @@
-md5: a7eddbec73d000c057cf9430ecdf2f58
+md5: c39a2d1fbe0f8a45494ca0692bb8628b
 frozen: true
 deps:
 - path: data/reference/uk-constituencies-2023.hexjson
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: 650598b297b87df9a0bcf0959a2ded992e255cb2
+    rev_lock: 71a9d356d0238e04c01beefcfdec437379b146f9
 outs:
 - md5: 1712389cc5a3a7c37fb1752124ff5fdd
   size: 69992
