@@ -1,10 +1,10 @@
-md5: 1edd9bef9184adcedacefe2ff8124642
+md5: 6a26a73083e6409b14326aea0f96f80c
 frozen: true
 deps:
 - path: data/reference/uk-constituencies-2024.geojson
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: c11419a6aa097f0446df67171ba33a0103aef5c2
+    rev_lock: fa1a239c119b25f548ae84c7ae3de7b7fa79d08b
 outs:
 - md5: f359cca6e3fb2ea1f58b62af9d2a2f76
   size: 2143297

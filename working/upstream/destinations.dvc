@@ -1,10 +1,10 @@
-md5: 149245cdb8202a97af3b0f3b42d8e7b2
+md5: acfb967c686d734234f8e44df6e1e87a
 frozen: true
 deps:
 - path: data/processed/dfe/destinations.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: c11419a6aa097f0446df67171ba33a0103aef5c2
+    rev_lock: fa1a239c119b25f548ae84c7ae3de7b7fa79d08b
 outs:
 - md5: 171620b82ca92e8df6d53402129dab4b
   size: 6148158
