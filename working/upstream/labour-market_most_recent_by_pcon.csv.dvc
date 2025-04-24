@@ -1,10 +1,10 @@
-md5: 6d44eaa090d9464e380cc9d9b7dda2ba
+md5: 625a946aea4bdf5da96d0acc0e558e0d
 frozen: true
 deps:
 - path: data/processed/labour-market/most_recent_by_pcon.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: 86d022284e9d5bebcbe2586f0f1621af3654baa7
+    rev_lock: 1ff2ad9caa6fc352882fee12db1f7ea4d164f6fb
 outs:
 - md5: 42ea7318183f0935651ace48b24932a4
   size: 2400222
