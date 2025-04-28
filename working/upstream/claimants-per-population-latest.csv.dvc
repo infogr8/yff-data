@@ -1,12 +1,12 @@
-md5: ec6e5d3870dfa7544a47ca628d07fdea
+md5: a1c4c994256d6bb4be0f2fc6cdf898c7
 frozen: true
 deps:
 - path: data/processed/claimants/claimants-per-population-latest.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: c11419a6aa097f0446df67171ba33a0103aef5c2
+    rev_lock: 2a68e179efa62a90a7d94b3cf69ced346c709bd7
 outs:
-- md5: 264cb20eb8fd94c8851047660e3dc5f2
-  size: 93665
+- md5: 7d74ae72126700300418231ebf7df385
+  size: 93689
   hash: md5
   path: claimants-per-population-latest.csv

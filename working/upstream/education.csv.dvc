@@ -1,10 +1,10 @@
-md5: 4b8a93d53ce6fa8037f6ac2294691ed4
+md5: 4c33bf89953b9cdaae1a54b6673b07fa
 frozen: true
 deps:
 - path: data/processed/yff/education.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: c11419a6aa097f0446df67171ba33a0103aef5c2
+    rev_lock: 2a68e179efa62a90a7d94b3cf69ced346c709bd7
 outs:
 - md5: 024f9ba2bfd92786a18a6298a8a06d9d
   size: 3294609
