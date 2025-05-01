@@ -1,10 +1,10 @@
-md5: dc54ff0f19a537891ab8c72add0abfd9
+md5: cf8293131af4559cb6ae05ef2be65a11
 frozen: true
 deps:
 - path: data/processed/yff/census_qualifications.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: aed0d9ea98792b1da12e2190be11d697efd2f6ab
+    rev_lock: 3512a28ff78989072dca338e8353c7162081ff2d
 outs:
 - md5: 17e750e233f9134fb4ca889ff784dfb6
   size: 361199
