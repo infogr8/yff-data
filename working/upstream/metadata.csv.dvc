@@ -1,10 +1,10 @@
-md5: d3aaad99db6813f65162a7d6288be9b6
+md5: 237b389055bc707f545e44cb7150b398
 frozen: true
 deps:
 - path: data/metadata/metadata.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: 5df4412001cd23d4c02a140a2960beeecc98bdac
+    rev_lock: 797384d66c7caa2a34e896c3f8bf9828188f9311
 outs:
 - md5: 2a5d36ebcc660c15ec496c79c93090ee
   size: 201
