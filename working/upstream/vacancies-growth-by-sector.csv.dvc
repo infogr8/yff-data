@@ -1,12 +1,12 @@
-md5: f4f4abae2a692a6cda510bce79b52cba
+md5: 57b4d3fa4bd802202f9431c56fed1469
 frozen: true
 deps:
 - path: data/processed/vacancies/vacancies-growth-by-sector.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: aae87e7cea7053d91c7ea3b61ecf03d87c77d16c
+    rev_lock: cba1c38ab75eae85ca304a89986e35c997b4d4b5
 outs:
-- md5: ebf6e4e339ab3a2bd093ecd959d7036a
-  size: 2015
+- md5: 719519fbfcb0017d36155da72237c5b4
+  size: 2018
   hash: md5
   path: vacancies-growth-by-sector.csv
