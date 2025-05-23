@@ -1,10 +1,10 @@
-md5: 6e931660ec05784333c9cd3faa748eb1
+md5: 5fec77a73a6b39094dcd82c462c910e2
 frozen: true
 deps:
 - path: data/processed/unem.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: 30f145b388c90a8b3b645665e919ef6097716369
+    rev_lock: 9b99f487e259f6bb89426a5d69ce9ed1eaf0b0a1
 outs:
 - md5: f359229920f9717e1761f43785e4663c
   size: 3782879
