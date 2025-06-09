@@ -1,10 +1,10 @@
-md5: 2b6cad7c8a63ebd5e5174bc2059134c1
+md5: 8084f86e36a3467871811300b6d89a94
 frozen: true
 deps:
 - path: data/metadata/codes/mm23-codes.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: 475b0e23cac8fafda1522756e1f5df82e54f8618
+    rev_lock: bc31a270dfe298d6cea8495ecfc0b94d516abb15
 outs:
 - md5: e2f9cc327d92a0084c903551811e39f6
   size: 377769
