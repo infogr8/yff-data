@@ -1,12 +1,12 @@
-md5: 1731585456c90ca425b545138499a407
+md5: 140cecd4493b5345d012fada8e648742
 frozen: true
 deps:
 - path: data/processed/oecd/neet.csv
   repo:
     url: https://github.com/infogr8/yff-data-pipelines
-    rev_lock: 0165adb2cff57433d706bb3f1a67f23dd9cd89df
+    rev_lock: 47e79b6522bf0e29655c46b608e898e788ee9ebb
 outs:
-- md5: 24f3a7854afaf7e773b9a1360f2d8ce3
+- md5: cfbfd822e0fbe3cb113221cbc1efc7ee
   size: 162522
   hash: md5
   path: oecd-neet.csv
