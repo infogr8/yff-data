@@ -31,7 +31,7 @@ import { getNamedColourStyles } from "./lib/generate-styles.ts";
 
 const site = lume({
   src: './src',
-  location: new URL('https://data.youthfuturesfoundation.org/'),
+  location: new URL('https://infogr8.github.io/yff-data/'),
 });
 
 // Import Nunjucks plugin
